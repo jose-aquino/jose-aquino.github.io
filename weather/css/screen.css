@@ -1,0 +1,121 @@
+/* Table of contents \
+ * Stylesheet for Screened Devices
+ * Created by: Jose Aquino
+ 1. Imports
+ 2. General Rules
+ 3. Mobile Rules 
+ 4. Large Screen Rules 
+*****************************************************************************************************/
+
+/*1.1 Normalize Import */
+@import url('normalize.css');
+
+/* 1.2 Google Font Imports */
+@import url('https://fonts.googleapis.com/css?family=Sansita&display=swap');
+
+/* 2. General Rules */
+html {
+    box-sizing: border-box;
+}
+body {
+    font-family: helvetica, sans-serif, verdana;
+    font-size: 20px;
+    width:100%;
+    height:1300px;
+}
+nav {
+    margin-top: 15px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Sansita, Eurostyle, sans-serif;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+.tile {
+    background-color: rgba(200.200.200..6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+    text-align: center;
+}
+span.first{
+    color: red;
+}
+ span.second{
+     color:blue;
+}
+#curWeather{
+    background-image: url(/weather/images/rain.jpg);
+}
+
+/* Mobile Rules */
+#page-header {
+    background-color: skyblue;
+    height: 50px;
+    width: 100%;
+}
+#title{
+    font-size: 43px;
+    font-weight: bold;
+    vertical-align: inherit;
+}
+#logo{
+    width: 5%;
+    height: 97%;
+    vertical-align: text-bottom;
+}
+
+#locInfo ul li{
+  
+    display:inline-block;
+    padding-left: 10px;
+    border-right: solid;  
+    font-size: 12px; 
+}
+#locInfo ul li:last-child {
+    border-right:none;
+ }
+#hourly{
+    border: 1px solid;
+    border-radius:15px;
+    background-color:lightgray;
+    text-align: center;
+}
+#hourly p{
+    max-width: 100%;   
+    white-space: nowrap;
+    overflow: auto;
+}
+footer{
+    height: 95px;
+    width: 100%;
+    
+}
+.foot{
+    background-color: skyblue;
+    margin-top: 3px;
+}
+.navbar{
+    overflow: hidden;
+    background-color: skyblue;  
+    width: 100%;
+    height: 57px;
+}
+nav ul li {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0px 11px 10px 11px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/* Large Screen Rules*/
+main {
+    width:100%;
+    height:1370px;
+}
+
+
