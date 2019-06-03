@@ -120,11 +120,10 @@ main {
     height:1370px;
 }
 /*mobile rules*/
-/* @media screen and (max-width:480px){
-    body{
-        background-color: lightgreen;
+ @media screen and (max-width:480px){
+    #logo{
+        width: 15%;
+        height: 97%;
+        vertical-align: text-bottom;
     }
-} */
-
-
-
+}
