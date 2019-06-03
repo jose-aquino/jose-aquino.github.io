@@ -32,6 +32,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 *, *:before, *:after{
     box-sizing: inherit;
+    padding: initial;
 }
 .tile {
     background-color: rgba(200.200.200..6);
@@ -73,6 +74,8 @@ span.first{
     padding-left: 10px;
     border-right: solid;  
     font-size: 12px; 
+    
+
 }
 #locInfo ul li:last-child {
     border-right:none;
@@ -112,12 +115,16 @@ nav ul li {
     text-decoration: none;
     font-size: 17px;
 }
-
-/* Large Screen Rules*/
 main {
     width:100%;
     height:1370px;
 }
+/*mobile rules*/
+ @media screen and (max-width:480px){
+     body{
+         background-color: lightgreen;
+     }
+ }
 
 
 
