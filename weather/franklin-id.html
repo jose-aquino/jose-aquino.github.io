@@ -10,9 +10,16 @@
 <body>
 
      <header id="page-header">
-      
-       <img id = "logo" src="/weather/images/logo.jpg" alt="Weather Site Logo"> <span id="title">The Weather Site</span> 
+       <img id = "logo" src="/weather/images/logo.jpg" alt="Weather Site Logo"> <span id="title">The Weather Site</span>        
     </header> 
+    <nav class="navbar" id="nav1">
+      <ul>
+        <li><a href="/index.html" title="Go to the Weather Site home page">Home</a></li>
+        <li><a href="#" title="Search in the website">Search</a></li>
+        <li><a href="#" title="Franklin, ID weather">Franklin</a></li>
+        <li><a href="#" title="Greenville">Greenville</a></li>
+      </ul>
+    </nav>
     
     <main>
         
@@ -27,20 +34,20 @@
         <!-- Just add the id for each div or section. Also make some adjustments for your divs and sections. -->
       <div id="curWeather">
         <section id="temps" class="tile">
-            <h3>Temperature</h3>
+            <h3 class="subtitle">Temperature</h3>
             <h2>40F</h2>
             <span class="first" >64&#176;F &nbsp; </span>  <span class="second">41&#176;F</span>
             <p> Feels Like 40&#176;F</p>
         </section>
         <section id="wind" class="tile">
-            <h3>Wind</h3>
+            <h3 class="subtitle">Wind</h3>
                 <img src="/weather/images/wind-pointer.png" alt="Wind Pointer">
                 <p>5 mph</p>
                     <p><strong>Direction: </strong>SW</p>
                     <p><strong>Gusts: </strong>10-12</p>
         </section>
         <section id="summary" class="tile">
-            <h3>Rainy</h3>
+            <h3 class="subtitle">Rainy</h3>
             <img src="/weather/images/raindrops.jpg" class="rain" alt="Summary">
         </section>
       </div>
@@ -53,7 +60,7 @@
        <div class="foot">
          &copy; 2019 - The Weather Site 
        </div>
-         <nav class="navbar">
+         <nav class="navbar" id="nav2">
            <ul>
              <li><a href="/index.html" title="Go to the Weather Site home page">Home</a></li>
              <li><a href="#" title="Search in the website">Search</a></li>
