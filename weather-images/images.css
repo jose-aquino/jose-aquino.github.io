@@ -1,0 +1,19 @@
+
+.description2{
+    display: none;
+}
+.img {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 15px    
+}
+
+/*Mobile Screen*/
+@media screen and (max-width:450px){
+     ul.description {
+        display: none;
+    }
+    .description2{
+        display: block;
+    }
+}
