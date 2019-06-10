@@ -21,7 +21,6 @@ body {
     font-family: helvetica, sans-serif, verdana;
     font-size: 20px;
     width:100%;
-    height:13
  
 }
 nav {
@@ -174,6 +173,10 @@ main {
     }
     .navbar{
         height:145px;
+        display:none;
+    }
+    #nav2{
+        display: block;
     }
     nav ul li {
     float: none;
@@ -182,17 +185,17 @@ main {
         margin: 0.2em 9px;
     }
     main {
-        height: 1150px;
+        height: 1165px;
     }    
 }
 
-@media screen and (max-width:800px){
+@media screen and (min-width:451px) and (max-width:800px){
     .rain{
         height: 429px;
         width: 90%;
     }
     main {
-        height: 1165px;
+        height: 1300px;
     }
 
     #nav1 {
