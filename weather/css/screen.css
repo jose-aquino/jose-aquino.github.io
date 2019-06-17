@@ -21,7 +21,6 @@ body {
     font-family: helvetica, sans-serif, verdana;
     font-size: 20px;
     width:100%;
- 
 }
 nav {
     margin-top: 15px;
@@ -66,6 +65,16 @@ span.first{
     font-weight: bold;
     vertical-align: inherit;
 }
+
+#dial {
+    height: 150px;
+    width: 150px;
+    background: no-repeat center/85% url('/weather/images/wind-pointer.png');
+    z-index : 100;
+    margin: -.6em auto 0;
+    transform: rotate(100deg);
+}
+
 #logo{
     width:15%;
     height: 97%;

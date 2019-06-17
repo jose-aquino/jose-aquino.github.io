@@ -35,11 +35,12 @@
             <h3 class="subtitle">Temperature</h3>
             <h2>40F</h2>
             <span class="first" >64&#176;F &nbsp; </span>  <span class="second">41&#176;F</span>
-            <p> Feels Like 40&#176;F</p>
+            <p>Feels Like <span id ="feelTemp">??</span>&#176;F</p>
         </section>
         <section id="wind" class="tile">
             <h3 class="subtitle">Wind</h3>
-                <img src="/weather/images/wind-pointer.png" alt="Wind Pointer">
+            <!-- <img src="/weather/images/wind-pointer.png" alt="Wind Pointer"> -->
+            <div id="dial" class="w"></div>
                 <p>5 mph</p>
                     <p><strong>Direction: </strong>SW</p>
                     <p><strong>Gusts: </strong>10-12</p>
@@ -70,6 +71,7 @@
            </ul>
          </nav>
      </footer>
+     <script src="/weather/js/functions.js"></script>
 </body>
 </html>
 
