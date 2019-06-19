@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6 {
     padding: initial;
 }
 .tile {
-    background-color: rgba(200.200.200..6);
+    background-color: rgba(211, 211, 211, 0.5);
     border: 1px solid;
     border-radius: 15px;
     text-align: center;
@@ -47,9 +47,9 @@ span.first{
      color:blue;
 }
 #curWeather {
-    background-image: url(/weather/images/rain.jpg);
-
+ 
 }
+
 .rain{
     width: 90%;
 }
@@ -139,6 +139,21 @@ main {
       justify-content: space-evenly;
       height: 600px;
     }
+    .clear{
+        background-image: url(/weather/new-images/clear_1550.jpg);
+    }
+    .snow{
+        background-image: url(/weather/new-images/snow_1550.jpg);
+    }
+    .rainy{
+        background-image: url(/weather/new-images/rain_1550.jpg);
+    }
+    .cloud{
+        background-image: url(/weather/new-images/clouds_1550.jpg);
+    }
+    .fog{
+        background-image: url(/weather/new-images/fog_1550.jpg);
+    }
     #title{
         font-size: 45px;
     }
@@ -171,6 +186,21 @@ main {
         height: 97%;
         vertical-align: text-bottom;
     }
+    .clear{
+        background-image: url(/weather/new-images/clear_600.jpg);
+    }
+    .snow{
+        background-image: url(/weather/new-images/snow_600.jpg);
+    }
+    .rain{
+        background-image: url(/weather/new-images/rain_600.jpg);
+    }
+    .cloud{
+        background-image: url(/weather/new-images/clouds_600.jpg);
+    }
+    .fog{
+        background-image: url(/weather/new-images/fog_600.jpg);
+    }
     #title{
         font-size: 35px;
     }
@@ -202,6 +232,21 @@ main {
     .rain{
         height: 429px;
         width: 90%;
+    }
+    .clear{
+        background-image: url(/weather/images/clear.jpg);
+    }
+    .snow{
+        background-image: url(/weather/images/snow.jpg);
+    }
+    .rainy{
+        background-image: url(/weather/images/rain.jpg);
+    }
+    .cloud{
+        background-image: url(/weather/images/clouds.jpg);
+    }
+    .fog{
+        background-image: url(/weather/images/fog.jpg);
     }
     main {
         height: 1300px;

@@ -7,6 +7,18 @@ const speed = 5;
 buildWC (speed, temp);
 const direction = "NNE";
 windDial(direction);
+let weatherCon = document.getElementById('curWeather').className;
+let curWeather = document.getElementById('curWeather');
+let wDescription = document.getElementById('wDescription').innerHTML.toLowerCase();
+let subtitle = document.getElementById('wDescription')
+let condition = getCondition(wDescription);
+let meter = document.getElementById("elevation").innerHTML;
+let feet = meter * 3.2808;
+convertMeters();
+changeSummaryImage(wDescription);
+
+
+
 
 //This function will calculate a wind chill temperature
 function buildWC(speed, temp) {
@@ -26,6 +38,7 @@ function buildWC(speed, temp) {
     console.log(wc);
     feelTemp.innerHTML = wc;
 }
+
 
 // Wind Dial Function
 function windDial(direction){
@@ -69,5 +82,59 @@ function windDial(direction){
         case "W":
         dial.setAttribute("class", "w");
         break;
+      }
+}
+ 
+
+function getCondition(wDescription){
+    if (wDescription.includes('rainy') || wDescription.includes("rain") || wDescription.includes('wet')){  
+        return "rainy";
+    }
+    else if (wDescription.includes('cloudy') || wDescription.includes('cloud') || wDescription.includes('overcast')){
+        return "cloud";
+    }
+    else if (wDescription.includes('clear') || wDescription.includes('sunny')){
+        return "clear";
+    }
+    else if (wDescription.includes('fog') || wDescription.includes('foggy')) {
+        return "fog";
+    }
+    else if (wDescription.includes('snow') || wDescription.includes('snowy')){
+        return "snow";
     }
 }
+
+ function changeSummaryImage(condition) {
+    switch(condition){
+        case "clear":
+        case "sunny":
+        curWeather.setAttribute("class", "clear");
+        break;
+        case "rainy":
+        case "wet":
+        case "rain":
+        curWeather.setAttribute("class", "rainy");
+        break;
+        case "cloud":
+        case "cloudy":
+        case "overcast":
+        curWeather.setAttribute("class", "cloud");
+        break;
+        case "fog":
+        case "foggy":
+        curWeather.setAttribute("class", "fog");
+        break;
+        case "snow":
+        case "snowy":
+        curWeather.setAttribute("class", "snow");
+        break;
+    }
+ } 
+ 
+ function convertMeters(){
+    
+    feet = Math.floor(feet);
+    document.getElementById("elevation").innerHTML = feet;
+}
+
+
