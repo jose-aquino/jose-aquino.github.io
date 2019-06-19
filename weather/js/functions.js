@@ -2,10 +2,10 @@
 console.log('My javascript is being read');
 
 // Variable for Function Use
-const temp = 31;
-const speed = 5;
+let temp = 31;
+let speed = 5;
 buildWC (speed, temp);
-const direction = "NNE";
+let direction = "NNE";
 windDial(direction);
 let weatherCon = document.getElementById('curWeather').className;
 let curWeather = document.getElementById('curWeather');
@@ -15,6 +15,7 @@ let condition = getCondition(wDescription);
 let meter = document.getElementById("elevation").innerHTML;
 let feet = meter * 3.2808;
 convertMeters();
+console.log(convertMeters());
 changeSummaryImage(wDescription);
 
 
@@ -22,7 +23,7 @@ changeSummaryImage(wDescription);
 
 //This function will calculate a wind chill temperature
 function buildWC(speed, temp) {
-    const feelTemp = document.getElementById('feelTemp');
+    let feelTemp = document.getElementById('feelTemp');
 
     // Compute the windchill
     let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16); 
@@ -43,7 +44,7 @@ function buildWC(speed, temp) {
 // Wind Dial Function
 function windDial(direction){
     // Get the wind dial container
-    const dial = document.getElementById("dial");
+    let dial = document.getElementById("dial");
         // Determine the dial class
       switch (direction){
         case "North":
