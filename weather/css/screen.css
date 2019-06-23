@@ -49,7 +49,9 @@ span.first{
 #curWeather {
  
 }
-
+.hide{
+    display: none;
+}
 .rain{
     width: 90%;
 }
