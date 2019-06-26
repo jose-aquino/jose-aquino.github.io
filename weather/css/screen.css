@@ -74,9 +74,38 @@ span.first{
     background: no-repeat center/85% url('/weather/images/wind-pointer.png');
     z-index : 100;
     margin: -.6em auto 0;
-    transform: rotate(100deg);
 }
 
+.n {
+    transform: rotate(0deg);
+}
+.ne {
+    transform: rotate(45deg);
+}
+.e {
+    transform: rotate(90deg);
+}
+.se {
+    transform: rotate(135deg);
+}
+.s {
+    transform: rotate(180deg);
+}
+.sw {
+    transform: rotate(225deg);
+}
+.w {
+    transform: rotate(270deg);
+}
+.nw {
+    transform: rotate(315deg);
+}
+#wind2 {
+    position: relative;
+    bottom: 105px;
+    z-index: 2;
+    margin-bottom: -70px;
+}
 #logo{
     width:15%;
     height: 97%;
@@ -89,9 +118,8 @@ span.first{
     padding-left: 10px;
     border-right: solid;  
     font-size: 12px; 
-    
-
 }
+
 #locInfo ul li:last-child {
     border-right:none;
  }
@@ -194,7 +222,7 @@ main {
     .snow{
         background-image: url(/weather/new-images/snow_600.jpg);
     }
-    .rain{
+    .rainy{
         background-image: url(/weather/new-images/rain_600.jpg);
     }
     .cloud{
@@ -221,13 +249,15 @@ main {
     }
     nav ul li {
     float: none;
+    margin-bottom: -4px;
     }
     .tile{
         margin: 0.2em 9px;
     }
     main {
-        height: 1165px;
+        height: 1060px;
     }    
+   
 }
 
 @media screen and (min-width:451px) and (max-width:800px){
@@ -251,10 +281,11 @@ main {
         background-image: url(/weather/images/fog.jpg);
     }
     main {
-        height: 1270px;
+        height: 1180px;
     }
 
     #nav1 {
         display: none;
     }
+    
 }

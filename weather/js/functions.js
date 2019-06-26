@@ -5,7 +5,7 @@ console.log('My javascript is being read');
 
 // let temp = 31;
 // let speed = 5;
-// let direction = "NNE";
+// let direction = document.getElementById("direction").innerHTML.toLowerCase();
 // let weatherCon = document.getElementById('curWeather').className;
 // let curWeather = document.getElementById('curWeather');
 // let wDescription = document.getElementById('wDescription').innerHTML.toLowerCase();
@@ -53,40 +53,40 @@ function windDial(direction){
     let dial = document.getElementById("dial");
         // Determine the dial class
       switch (direction){
-        case "North":
-        case "N":
+        case "north":
+        case "n":
         dial.setAttribute("class", "n"); //"n" is the CSS rule selector
         break;
-        case "NE":
-        case "NNE":
-        case "ENE":
+        case "ne":
+        case "nne":
+        case "ene":
         dial.setAttribute("class", "ne");
         break;
-        case "NW":
-        case "NNW":
-        case "WNW":
+        case "nw":
+        case "nnw":
+        case "wnw":
         dial.setAttribute("class", "nw");
         break;
-        case "South":
-        case "S":
+        case "south":
+        case "s":
         dial.setAttribute("class", "s");
         break;
-        case "SE":
-        case "SSE":
-        case "ESE":
+        case "se":
+        case "sse":
+        case "ese":
         dial.setAttribute("class", "se");
         break;
-        case "SW":
-        case "SSW":
-        case "WSW":
+        case "sw":
+        case "ssw":
+        case "wsw":
         dial.setAttribute("class", "sw");
         break;
-        case "East":
-        case "E":
+        case "east":
+        case "e":
         dial.setAttribute("class", "e");
         break;
-        case "West":
-        case "W":
+        case "west":
+        case "w":
         dial.setAttribute("class", "w");
         break;
       }
@@ -171,11 +171,13 @@ function buildHourlyData(nextHour,hourlyTemps) {
     // The hourlyTemps variable holds an array of temperatures
     // Line 8 builds a list item showing the time for the next hour 
     // and then the first element (value in index 0) from the hourly temps array
-     let hourlyListItems = '<li>' + format_time(nextHour) + ': ' + hourlyTemps[0] + '&deg;F</li>';
+     let hourlyListItems = format_time(nextHour) + ': ' + hourlyTemps[0] + '&deg;F | ';
      // Build the remaining list items using a for loop
      for (let i = 1, x = hourlyTemps.length; i < x; i++) {
-      hourlyListItems += '<li>' + format_time(nextHour+i) + ': ' + hourlyTemps[i] + '&deg;F</li>';
+        let pipe = (i!=x-1)?"| ":"";        
+        hourlyListItems += format_time(nextHour+i) + ': ' + hourlyTemps[i] + '&deg;F ' + pipe;
      }
+     
      console.log('HourlyList is: ' +hourlyListItems);
      return hourlyListItems;
     }

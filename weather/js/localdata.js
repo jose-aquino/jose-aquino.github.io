@@ -1,12 +1,13 @@
 "use strict"
 
 
-
-
 let pageNav = document.getElementById('nav1');
 let pageNav2 = document.getElementById('nav2');
 let statusContainer = document.getElementById('status');
 let contentContainer = document.getElementById('main-content');
+let direction = document.getElementById("direction").innerHTML.toLowerCase();
+let date = new Date();
+let nextHour = date.getHours() + 1;
 
 let weatherURL = "https://jose-aquino.github.io/weather/weather.json";
 fetchData(weatherURL);
@@ -66,7 +67,7 @@ function fetchData(weatherURL){
         // Get the zip
         let zip = g.Zip;
         // Get the hourly data 
-        let hours = g.Hourly;
+        let tempHours = g.Hourly;
         
         
 
@@ -111,16 +112,17 @@ function fetchData(weatherURL){
         document.getElementById('wDescription').innerHTML = currentCondition;
 
         // Set the hourly temperature information
-        document.getElementById('hours').innerHTML = hours;
+        document.getElementById('hours').innerHTML = buildHourlyData(nextHour,tempHours);
 
         // Change the status of the containers
         contentContainer.setAttribute('class', ''); // removes the hide class
         statusContainer.setAttribute('class', "hide"); // hides the status container
     
-        //Calling functions
-        buildWC(wind,temp);
-        changeSummaryImage(getCondition(currentCondition.toLowerCase()));
-         convertMeters();
+    //Calling functions
+    buildWC(wind,temp);
+    changeSummaryImage(getCondition(currentCondition.toLowerCase()));
+    convertMeters();
+    windDial(direction);
       })
   .catch(function(error){
   console.log('There was a fetch problem: ', error.message);
