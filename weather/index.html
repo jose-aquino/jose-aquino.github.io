@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="/weather/css/screen.css" media="screen">
 </head>
 <body>
-
      <header id="page-header">
        <img id = "logo" src="/weather/images/logo.jpg" alt="Weather Site Logo"> <span id="title">The Weather Site</span>        
     </header> 
@@ -23,15 +22,14 @@
       </ul>
     </nav>
     
-    <section id="status">Please be patient while I get your weather information.</section>
-
-    <main id = "main-content" class="hide">
+    <p id = "status"></p>
+    <main id = "hide">
       <h1 id="locName">Franklin, ID</h1>
         <section id="locInfo">
             <ul>
-                <li><strong>Zip: </strong><span id = "Zip">83237</span> &nbsp;</li>
+                <li><strong>Zip: </strong><span id = "Zip">none</span> &nbsp;</li>
                 <li><strong> &nbsp; Elevation: </strong><span id="elevation">1514.246</span> ft &nbsp; </li>
-                <li><strong> &nbsp; Location: </strong><span id ="location">111.79&#176; N, 42.07&#176; W</span></li>
+                <li><strong> &nbsp; Location: </strong><span id ="latitude"></span> <span id="longitude"></span></li>
             </ul>
         </section>
         <!-- Just add the id for each div or section. Also make some adjustments for your divs and sections. -->
@@ -52,10 +50,12 @@
         </section>
         <section id="summary" class="tile">
             <h3 id = "wDescription" class="subtitle">rainy</h3>
-            <picture>
+            <div id = "sImage" class = "image"></div>
+
+            <!-- <picture>
               <source srcset="/weather/new-images/rain_270.jpg" media = "(max-width:450px)">
               <img src="/weather/new-images/rain_440.jpg" alt="Summary">
-            </picture>
+            </picture> -->
         </section>
       </div>
         <section id="hourly">
@@ -78,7 +78,7 @@
          </nav>
      </footer>
      <script src="/weather/js/functions.js"></script>
-     <script src = "/weather/geo_loc.js"></script>
+     <script src="/weather/geo_loc.js"></script>
 </body>
 </html>
 

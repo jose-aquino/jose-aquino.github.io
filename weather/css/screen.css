@@ -184,6 +184,28 @@ main {
     .fog{
         background-image: url(/weather/new-images/fog_1550.jpg);
     }
+
+    .clear2{
+        content:url(/weather/new-images/clear_440.jpg);
+        display: inline;
+    }
+    .snow2{
+        content:url(/weather/new-images/snow_440.jpg);
+        display: inline;
+    }
+    .rainy2{
+        content:url(/weather/new-images/rain_440.jpg);
+        display: inline;
+    }
+    .cloud2{
+        content:url(/weather/new-images/clouds_440.jpg);
+        display: inline;
+    }
+    .fog2{
+        content:url(/weather/new-images/fog_440.jpg);
+        display: inline;
+    }
+
     #title{
         font-size: 45px;
     }
@@ -234,6 +256,28 @@ main {
     #title{
         font-size: 35px;
     }
+
+    .clear2{
+        content:url(/weather/new-images/clear_270.jpg);
+        display: inline;
+    }
+    .snow2{
+        content:url(/weather/new-images/snow_270.jpg);
+        display: inline;
+    }
+    .rainy2{
+        content:url(/weather/new-images/rain_270.jpg);
+        display: inline;
+    }
+    .cloud2{
+        content:url(/weather/new-images/clouds_270.jpg);
+        display: inline;
+    }
+    .fog2{
+        content:url(/weather/new-images/fog_270.jpg);
+        display: inline;
+    }
+
     #locName{
         font-size:25px;
     }
@@ -280,6 +324,28 @@ main {
     .fog{
         background-image: url(/weather/images/fog.jpg);
     }
+
+    .clear2{
+        content:url(/weather/new-images/clear_440.jpg);
+        display: inline;
+    }
+    .snow2{
+        content:url(/weather/new-images/snow_440.jpg);
+        display: inline;
+    }
+    .rainy2{
+        content:url(/weather/new-images/rain_440.jpg);
+        display: inline;
+    }
+    .cloud2{
+        content:url(/weather/new-images/clouds_440.jpg);
+        display: inline;
+    }
+    .fog2{
+        content:url(/weather/new-images/fog_440.jpg);
+        display: inline;
+    }
+
     main {
         height: 1180px;
     }
