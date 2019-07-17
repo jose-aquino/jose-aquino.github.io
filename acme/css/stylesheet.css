@@ -1,0 +1,270 @@
+/*Color Scheme:
+   background-color: #000000
+   background-color: #0000ee
+   background-color: #808080
+   background-color: #990033
+   background-color: #de2226
+   background-color: #ffffff
+  
+*/
+
+/********** Text Styles ********/
+html {
+    box-sizing: border-box;
+ }
+
+#childpicture {
+    width: 100%;
+}
+
+#itemReviews {
+    width: 100%;
+}
+.hide{
+   display: none;
+}
+
+ html * {
+    box-sizing: border-box;
+ }
+ h2 {
+    color:#de2226;
+ }
+ /********** Body *********/
+ #backgroundImage{
+    background-image: url(/acme/images/site/background.jpg);
+    background-repeat: none;
+    background-size: 100%;
+ }
+ 
+ body {
+    font-family: Helvetica, sans-serif;
+    background-image: url(/acme/images/site/background.jpg);
+    background-repeat: none;
+    background-size: 100%;
+ }
+ 
+ /******** Navigation Container ***********/
+ nav{
+    background-color: #de2226;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+ }
+ nav #links{
+    display: flex;
+    flex: row;
+    justify-content: space-evenly;
+    list-style: none;
+    color: #ffff;
+    width: 80%;
+    font-size: 15px;
+    margin-top:0px;
+    padding-left: 0px;
+    height: 40px;
+    align-items: center;
+ 
+ }
+ a{   
+   text-decoration: none;
+   list-style-type: none;
+   color: white;
+
+ }
+ /******** Welcome to Acme Container ***********/
+ #banner1{
+    background-image: url(/acme/images/site/feature.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 200px; */
+ }
+ #banner_container{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+ }
+ #banner_1_list{
+     padding: 10px;
+    list-style-type: none;
+    color: red;
+    
+ }
+ 
+ /******** Logo Container ***********/
+ #logo-div{
+    background-color: #ffff;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ 
+ .container{
+ background-color: #ffff;
+ width: 98%;
+ margin-left: auto;
+ margin-right: auto;
+ }
+ 
+ 
+ /******** Recipe Container ***********/
+ 
+ #reviewRecipes{
+    width: 100%;
+ }
+
+ #recipesBox2{
+    width: 87%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+ }
+ .recipeFont{
+    color: blue;
+    text-decoration: underline;
+ }
+ .recipesList{
+    width: 50%;
+    flex: 0 1 50%;
+    /* border: solid 1px #000; */
+    text-align: center;
+    /* background-color: lightgrey; */
+    padding: 1%;
+ }
+
+ .recColor{
+    background-color: lightgray;
+ }
+ 
+ footer{
+    font-size: 12px;
+   text-align: center;
+   padding: 2%;
+ 
+ }
+
+ #line {
+    background-color: black;
+width: 95%;
+height: 5px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 5%;
+ }
+
+ #copyright{
+   text-align: center;
+ }
+
+
+   /*********Child Pages*********/
+
+#content{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+   } 
+
+ #info{
+   width: 50%;
+   float:right;
+ }
+ #path{
+    width:50%;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+ }
+ #price-font{
+    font-size: 35px;
+    color: red;
+ }
+
+ .bold{
+    font-weight: bold;
+ }
+.secondTitle {
+    font-size: 1em;
+}
+
+ @media screen and (min-width: 700px) {
+    /* #reviewSection{
+        width: 100%;
+    } */
+    #itemReviews{
+        width:50%;
+        }
+    #childpicture{
+        width:50%;
+        justify-content: center;
+        text-align: center;
+     }
+     
+    #path{
+      width:70%;
+      padding: 10px;
+      margin: 10px;
+    justify-content: center;
+
+   }
+    .recipes{
+      width: 50%;
+   }
+
+   .reviewSection{
+      width: 50%;
+      float:right;
+   }
+
+   #info{
+     width: 50%;
+     float:right;
+   }
+
+   .container{
+      background-color: #ffff;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      }
+
+      #logo-div{
+         background-color: #ffff;
+         width: 85%;
+         margin-left: auto;
+         margin-right: auto;
+      }
+
+      nav #links{
+         display: flex;
+         flex: row;
+         justify-content: space-evenly;
+         list-style: none;
+         color: #ffff;
+         width: 80%;
+         font-size: 20px;
+         margin-top:0px;
+         padding-left: 0px;
+         height: 40px;
+         align-items: center;
+      
+      }
+
+      #banner1{
+         background-image: url(/acme/images/site/feature.jpg);
+         background-size: 100%;
+         background-repeat: no-repeat;
+         width: 100%;
+         height: 300px;
+ } 
+
+ #banner_1_list{
+   padding: 10px;
+  list-style-type: none;
+  color: red;
+}
+}
