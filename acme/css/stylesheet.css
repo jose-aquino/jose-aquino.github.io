@@ -84,11 +84,16 @@ html {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
+    
  }
  #banner_1_list{
-     padding: 10px;
-    list-style-type: none;
-    color: red;
+     /* padding: 10px; */
+     font-size: 11px;
+     /* margin-right: -14%; */
+     width: 78%;
+     text-align: center;
+     list-style-type: none;
+     color: red;
     
  }
  
@@ -190,6 +195,9 @@ margin-top: 5%;
 .secondTitle {
     font-size: 1em;
 }
+#actionbtn {
+   width: 158px;
+}
 
  @media screen and (min-width: 700px) {
     /* #reviewSection{
@@ -254,6 +262,10 @@ margin-top: 5%;
       
       }
 
+      #actionbtn {
+         width: unset;
+      }
+
       #banner1{
          background-image: url(/acme/images/site/feature.jpg);
          background-size: 100%;
@@ -263,8 +275,11 @@ margin-top: 5%;
  } 
 
  #banner_1_list{
-   padding: 10px;
-  list-style-type: none;
-  color: red;
+   margin-right: -37%;
+   margin-top: 5%;
+   text-align: unset;
+   list-style-type: none;
+   color: red;
+   font-size: 100%;
 }
 }
