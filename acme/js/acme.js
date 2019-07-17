@@ -7,6 +7,16 @@ Nav.addEventListener('click', function(evt){
 
    // Get the city name
    let name = evt.target.innerHTML;
+   let pageTitle = document.getElementById('acmeTitle');
+   let fullName = name + " | ";
+        if (pageTitle.childNodes.length > 1) {
+          pageTitle.childNodes[0].remove();
+        }
+        // Create a text node containing the full name 
+        let fullNameNode = document.createTextNode(fullName);
+        // inserts the fullName value before any other content that might exist
+        pageTitle.insertBefore(fullNameNode, pageTitle.childNodes[0]);
+
    switch (name) {
      case "Anvils":
        case "Explosives":
